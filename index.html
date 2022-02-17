@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+<title>TeemingVR Test Bot</title>
+<meta name="description" content="Plasp FAQ Bot">
+<meta name="keywords" content="plasp demo bot">
+
+<script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+<df-messenger
+  intent="WELCOME"
+  chat-title="TeemingVR_IVR_Main"
+  agent-id="85b80e78-c498-4b1d-ad48-77c92cf7a65f"
+  language-code="en"
+></df-messenger>
+
+<style>
+  html, body {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  /* background: url('background.png'); */
+  }
+
+.mainPage {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.mainPage > h1 {
+ grid-column: 1;
+ padding-left: 10%;
+}
+
+.mainPage > image {
+  grid-column: 2;
+}
+  
+</style>
+</head>
+<body>
+<div class="mainPage">
+  <h1>TeemingVR Test Bot</h1>
+  <image src="./background.png"/>
+</div>
+</body>
+</html>
